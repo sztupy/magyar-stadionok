@@ -1,0 +1,21 @@
+html, body {
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+
+#map {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+
+.data-popup {
+  display: block;
+  overflow: auto;
+  width: 150px;
+  min-height: 100px;
+  max-height: 200px;
+}

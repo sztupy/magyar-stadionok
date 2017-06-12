@@ -1,0 +1,15 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    mini_portile2 (2.2.0)
+    nokogiri (1.8.0-x64-mingw32)
+      mini_portile2 (~> 2.2.0)
+
+PLATFORMS
+  x64-mingw32
+
+DEPENDENCIES
+  nokogiri
+
+BUNDLED WITH
+   1.14.5
