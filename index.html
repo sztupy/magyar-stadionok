@@ -11,6 +11,13 @@
   <script src="src/leaflet.markercluster-src.js"></script>
   <link rel="stylesheet" href="src/screen.css" />
   <script src="src/points.js" charset="utf-8"></script>
+
+  <meta property="og:image" content="https://sztupy.hu/magyar-stadionok/img/preview.png" />
+    <meta property="og:site_name" content="sztupy.hu" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="List of Hungarian Sport Centres" />
+    <meta property="og:url" content="https://sztupy.hu/magyar-stadionok" />
+    <meta property="og:description" content="Map view of sport centre locations in Hungary" />
 </head>
 <body>
   <script src="https://sztupy.hu/assets/js/logo.js"></script>
@@ -38,6 +45,9 @@
       var markers = L.markerClusterGroup();
       markers.addLayers(markerList);
       map.addLayer(markers);
+      // markerList.forEach(function(marker) {
+      //   map.addLayer(marker);
+      // });
       map.fitBounds(markers.getBounds());
     }
     reloadMarkers();
